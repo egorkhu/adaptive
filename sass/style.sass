@@ -1,0 +1,547 @@
+@import "../awesome/fontawesome.scss"
+@import "../awesome/solid.scss"
+@import "../awesome/brands.scss"
+
+*
+  padding: 0
+  bottom: 0
+
+html
+  font-size: 100%
+
+.disable
+  display: none
+
+.b-page
+  width: 100%
+  margin: 0
+  background-color: #fff
+  font-family: 'Open Sans', sans-serif
+  box-sizing: border-box
+  font-size: 12px
+
+.center
+  padding: 0 20px
+
+.b-head
+  width: 100%
+  height: 83px
+  position: absolute
+  top: 0
+  z-index: 9998
+  &__container
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.b-logo__img
+  width: 100px
+  height: 29px
+
+.b-mobile-menu_size
+  font-size: 32px
+
+.b-head-mobile-menu_color
+  color: #FFFFFF
+
+.b-start-page
+  position: relative
+  width: 100%
+  &__background
+    min-height: 288px
+    background-image: url(../img/main.png)
+    &_position
+      background-repeat: no-repeat
+      background-position: 85% 0
+      background-size: cover
+  &__text
+    text-align: left
+
+.b-start-header
+  font-weight: 800
+  margin: 0
+  font-size: 30px
+  &_start-page
+    padding: 21px 0 12px
+
+.b-start-subtext
+  margin: 0
+  font-size: 22px
+  &_start-page
+    padding-bottom: 20px
+
+.b-button
+  display: flex
+  height: 48px
+  justify-content: flex-end
+  align-items: center
+  color: #FFFFFF
+  background: #008DCD
+  border-radius: 30px
+  text-transform: uppercase
+  cursor: pointer
+  font-size: 16px
+  padding-right: 20px
+  box-sizing: border-box
+  transition: all .3s ease-in-out
+  &_wide
+    width: 278px
+  &_small
+    width: 230px
+  &_start-page
+    margin-bottom: 27px
+  &:hover
+    box-shadow: 0 4px 15px rgba(27, 170, 235, 0.45)
+
+.b-welcome-message
+  background: #F7F7F7
+  display: block
+  &_padding
+    padding-bottom: 20px
+
+.b-img
+  width: 100%
+  &_welcome
+    padding: 20px 0
+  &_step
+    padding-bottom: 20px
+
+.b-welcome-text__header
+  font-weight: 800
+  font-size: 16px
+
+.b-welcome-text__header_padding
+  padding: 0 0 15px 0
+
+.b-welcome-text__subtext_padding
+  padding: 0 0 15px 0
+
+.b-procedure_padding
+  padding-bottom: 27px
+  padding-top: 27px
+
+.b-procedure__step_padding
+  padding-bottom: 40px
+
+.b-step-text__header
+  font-weight: 600
+  font-size: 26px
+
+.b-step-text__header_padding
+  padding-bottom: 2px
+
+.b-step-text__description
+  font-size: 14px
+
+.b-slogan
+  background: #F7F7F7
+  &_padding
+    padding-top: 23px
+    padding-bottom: 23px
+  &__text
+    font-size: 21px
+    font-weight: 800
+    &_padding
+      padding-bottom: 15px
+
+.b-feedback
+  background: #008DCD
+  &__text_color_white
+    color: #FFFFFF
+  &_padding
+    padding-top: 28px
+    padding-bottom: 7px
+
+.b-feedback-text__header
+  font-size: 28px
+  font-weight: 700
+  &_padding
+    padding-bottom: 10px
+
+.b-feedback-text__subtext_padding
+  padding-bottom: 16px
+
+.b-form__input
+  border: 1px solid
+  border-radius: 30px
+  padding-left: 24px
+  box-sizing: border-box
+
+.b-feedback-form__input
+  width: 280px
+  height: 48px
+  border-color: #FFFFFF
+  background: #008DCD
+  color: #FFFFFF
+  font-size: 16px
+  &:focus
+    outline: none
+  &::placeholder
+    color: #FFFFFF
+    font-size: 16px
+    font-weight: 300
+  &_margin
+    margin-bottom: 10px
+
+.b-feedback__button_color
+  background: #FFCC00
+  color: #000
+  font-weight: 700
+  &:hover
+    box-shadow: 0 4px 20px rgba(255, 204, 0, 0.55)
+
+.b-feedback__button_margin
+  margin-bottom: 7px
+
+.b-personal-data__checkbox_display
+  display: none
+
+.b-personal-data__text
+  display: flex
+  align-items: flex-start
+  font-size: 10px
+  &:before
+    content: ""
+    display: inline-block
+    width: 10px
+    height: 10px
+    border: 1px solid #FFFFFF
+    background: #008DCD
+    margin-left: 10px
+    margin-right: 10px
+
+.b-personal-data__checkbox:checked ~ .b-personal-data__text:before
+    content: ""
+    outline: 3px solid #fff
+    outline-offset: -6px
+
+.b-personal-data__text_color
+  color: #FFFFFF
+
+.b-reviews_padding
+  padding-top: 21px
+  padding-bottom: 31px
+
+.b-review-header
+  font-size: 28px
+  font-weight: 700
+  &_padding
+    padding-bottom: 14px
+
+.b-reviews__carousel
+  position: relative
+
+.b-reviews__carousel_padding
+  padding: 0 28px
+
+.b-reviews-slide__container
+  display: flex
+  align-items: flex-start
+  &_margin
+    margin-bottom: 14px
+
+.b-reviews-slide__img_margin
+  margin-right: 18px
+
+.b-description-name
+  font-size: 26px
+  margin-top: -10px
+
+.b-description-company
+  font-size: 18px
+  &_padding
+    padding-bottom: 2px
+
+.b-description-category
+  font-size: 10px
+  line-height: 1.7
+
+.b-description-from,
+.b-description-to
+  @extend .b-description-category
+
+.b-reviews-carousel__controls
+  color: #E5E5E5
+  font-size: 26px
+
+.b-reviews-control-prev
+  position: absolute
+  top: 40%
+  left: -2px
+  cursor: pointer
+  &:hover
+    color: #008DCD
+
+.b-reviews-control-next
+  position: absolute
+  top: 40%
+  right: -2px
+  cursor: pointer
+  &:hover
+    color: #008DCD
+
+.b-advantages
+  background: #F7F7F7
+  padding-top: 23px
+  padding-bottom: 5px
+  &-header
+    font-size: 28px
+    font-weight: 700
+  &__list
+    list-style-type: none
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+.b-advantages-item
+  width: 30%
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding-bottom: 15px
+  &__img
+    width: 86px
+  &__description
+    font-size: 10px
+    text-align: center
+    width: 103%
+
+.b-guarantees_padding
+  padding-top: 27px
+  padding-bottom: 20px
+
+.b-guarantees-header
+  font-size: 26px
+  font-weight: 700
+  &_padding
+    padding-bottom: 18px
+
+.b-guarantees__carousel
+  position: relative
+
+.b-guarantees-carousel__controls
+  font-size: 26px
+  @extend .b-reviews-carousel__controls
+
+.b-guarantees-control-prev
+  font-size: 26px
+  @extend .b-reviews-control-prev
+  top: 10%
+
+.b-guarantees-control-next
+  @extend .b-reviews-control-next
+  top: 10%
+
+.b-guarantees__slide
+  padding: 0 20px
+
+.b-guarantees-slide__container
+  display: flex
+  align-items: center
+  padding-bottom: 12px
+
+.b-guarantees-slide__img
+  width: 62px
+  height: 62px
+  &_margin
+    margin-right: 10px
+
+.b-guarantees-slide__header
+  font-size: 14px
+  font-weight: 600
+
+.b-guarantees-slide__description_padding
+  padding-bottom: 17px
+
+.b-faq
+  background: #D2ECF7
+  &_padding
+    padding-bottom: 20px
+    padding-top: 27px
+
+.b-faq__header
+  font-size: 28px
+  font-weight: 700
+
+.b-faq__header_padding
+  padding-bottom: 27px
+
+@keyframes slide
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
+.b-faq__container
+  width: 100%
+  background-color: #FFFFFF
+  border-radius: 32px
+  box-sizing: border-box
+  &[open] .b-ask__container
+    i
+      transform: rotate(180deg)
+  &[open] .b-faq-answer
+    width: 100%
+    background: #F7F7F7
+    border-radius: 0 0 32px 32px
+    animation: slide 0.3s ease-in-out
+
+  &_margin
+    margin-bottom: 10px
+
+.b-faq-ask
+  width: 100%
+  height: 100%
+  padding: 16px 30px 16px 30px
+  box-sizing: border-box
+  i
+    color: #008DCD
+  &:focus
+    outline: none
+  &::-webkit-details-marker
+    display: none
+
+.b-summary__container
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.b-ask__question
+  width: 80%
+  height: 100%
+
+.b-faq-answer
+  padding: 16px 30px 16px 30px
+  box-sizing: border-box
+
+.b-clients__carousel
+  position: relative
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  justify-content: space-around
+  &_padding
+    padding: 0 20px
+
+.b-clients-carousel_item
+  width: 30%
+  padding: 20px 0
+  text-align: center
+
+.b-clients-carousel__controls
+  color: #E5E5E5
+  font-size: 28px
+
+.b-clients-control-prev
+  @extend .b-reviews-control-prev
+  left: -5px
+
+.b-clients-control-next
+  @extend .b-reviews-control-next
+  right: -5px
+
+.b-footer
+  background: #E9E9E9
+  &_padding
+    padding-top: 20px
+    padding-bottom: 10px
+
+.b-footer-top__header
+  font-size: 16px
+  font-weight: 700
+  &_padding
+    padding-bottom: 15px
+
+.b-footer-form__input
+  width: 278px
+  border: 1px solid #363636
+  box-sizing: border-box
+  border-radius: 30px
+  height: 40px
+  background: #E9E9E9
+  &:focus
+    outline: none
+  &::placeholder
+    color: #363636
+    font-size: 0.8rem
+
+.b-clients__button_flex_center
+  justify-content: center
+  padding-right: 0
+
+.b-clients__button
+  height: 40px
+
+.b-footer__top_padding
+  padding-bottom: 10px
+
+.b-footer__top_border
+  border-bottom: 1px solid #C4C4C4
+
+.b-footer-personal-data__text_color
+  color: #9E9E9E
+
+.b-footer-personal-data__text
+  &:before
+    content: ""
+    display: inline-block
+    width: 10px
+    height: 10px
+    border: 1px solid #9E9E9E
+    background: #e9e9e9
+    margin-left: 10px
+    margin-right: 10px
+
+.b-personal-data__checkbox:checked ~ .b-footer-personal-data__text:before
+  content: ""
+  outline: 3px solid #9E9E9E
+  outline-offset: -6px
+
+.b-footer__center_border
+  border-bottom: 1px solid #C4C4C4
+
+.b-head-footer_display
+  position: relative
+
+.b-footer-mobile-menu_color
+  color: #000
+
+.b-footer__bottom
+  width: 100%
+  display: flex
+  justify-content: space-between
+  font-size: 8px
+  &_padding
+    padding-top: 10px
+
+.b-footer-bottom__copyright
+  flex-grow: 1
+
+.b-footer-bottom__social-media
+  flex-grow: 3
+  justify-content: center
+
+.b-footer-bottom__year
+  flex-grow: 1
+  text-align: right
+
+.b-footer-bottom__author
+  flex-grow: 1
+  text-align: right
+
+.b-social-media__link
+  text-decoration: none
+  color: #FFFFFF
+
+.b-link__circle
+  width: 16px
+  height: 16px
+  display: flex
+  align-items: center
+  justify-content: center
+  background: #008DCD
+  border-radius: 50%
+
+@import "m767"
+@import "m1440"
